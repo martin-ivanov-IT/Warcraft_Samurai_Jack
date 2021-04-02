@@ -2,10 +2,10 @@
 #define DRAWRANGER_H_
 
 #include"Hero.h"
-typedef struct DrawRanger{
-    Hero base;
-}DrawRanger;
+#include"Defines.h"
+typedef Hero DrawRanger;
 
 void initDrawRanger(DrawRanger* drawRanger, char* name, int maxMana, int baseManaRegenRate);
+void drawRangerAction(DrawRanger* drawRanger, enum ActionType actionType);
 
 #endif

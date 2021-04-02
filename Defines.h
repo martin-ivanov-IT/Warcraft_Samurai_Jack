@@ -24,4 +24,6 @@ enum SpellType {
 #define DRAW_RANGER_ULTIMATE_SPELL_NAME "Charm"
 #define DRAW_RANGER_ULTIMATE_SPELL_MANA_COST 150
 
+#define BONUS_SPELL_MANA_COST 0
+
 #endif /* DEFINES_H_ */

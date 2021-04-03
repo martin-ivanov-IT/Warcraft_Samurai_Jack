@@ -10,14 +10,14 @@ void heroBaseInit(Hero *hero, const char *inputName, int inputMaxMana, int input
     hero->currMana = inputMaxMana;
 }
 
-void heroSpellsInit(Hero *hero, const char *basicSpellName, int basicSpellManaCost, const char *ultimateSpellName,
-                    int ultimateSpellManaCost){
-                        strncpy(hero->spells[BASIC].name, basicSpellName,MAX_SPELL_NAME_SIZE);
-                        hero->spells[BASIC].manaCost = basicSpellManaCost;
-                        strncpy(hero->spells[ULTIMATE].name,ultimateSpellName,MAX_SPELL_NAME_SIZE);
-                        hero->spells[ULTIMATE].manaCost = ultimateSpellManaCost;
-                    }
-
+void heroSpellsInit(Hero *hero, const char *basicSpellName, int basicSpellManaCost,
+                                const char *ultimateSpellName, int ultimateSpellManaCost)
+{
+    strncpy(hero->spells[BASIC].name, basicSpellName, MAX_SPELL_NAME_SIZE);
+    hero->spells[BASIC].manaCost = basicSpellManaCost;
+    strncpy(hero->spells[ULTIMATE].name, ultimateSpellName, MAX_SPELL_NAME_SIZE);
+    hero->spells[ULTIMATE].manaCost = ultimateSpellManaCost;
+}
 void baseRegenerate(Hero* hero){
     hero->currMana += hero->manaRegenRate;
     if(hero->currMana > hero->maxMana){

@@ -1,0 +1,3 @@
+H:/Warcraft/Warcraft_Samurai_Jack-master/build/CMakeFiles/warcraft.dir
+H:/Warcraft/Warcraft_Samurai_Jack-master/build/CMakeFiles/edit_cache.dir
+H:/Warcraft/Warcraft_Samurai_Jack-master/build/CMakeFiles/rebuild_cache.dir

@@ -35,5 +35,4 @@ void archmageAction(Archmage* archmage, enum ActionType actionType){
     else if(actionType == REGENERATE_MANA){
         regenerate(archmage);
     }
-
 }

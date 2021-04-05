@@ -1,0 +1,3 @@
+H:/Warcraft/build/CMakeFiles/warcraft.dir
+H:/Warcraft/build/CMakeFiles/edit_cache.dir
+H:/Warcraft/build/CMakeFiles/rebuild_cache.dir

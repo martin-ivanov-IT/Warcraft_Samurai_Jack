@@ -4,21 +4,6 @@
 #include"DrawRanger.h"
 #include"DeathKnight.h"
 
-void printArch(Archmage* archmage){
- printf("name: %s\nmaxMana: %d\nbaseManaRegen: %d\nmanaRegenModifier: %d\n"
-        ,archmage->base.name,
-         archmage->base.maxMana,
-         archmage->base.manaRegenRate,
-         archmage->manaRegenModifier);
-}
-void printDeathKnight(DeathKnight* deathKnight){
-  printf("name: %s\nmaxMana: %d\nbaseManaRegen: %d\n"
-        ,deathKnight->name, deathKnight->maxMana,deathKnight->manaRegenRate);
-}
-void printDrawRanger(DrawRanger* drawRanger){
-  printf("name: %s\nmaxMana: %d\nbaseManaRegen: %d\n"
-        ,drawRanger->name, drawRanger->maxMana,drawRanger->manaRegenRate);
-}
 
 int main() {
   char name[MAX_HERO_NAME_SIZE + 1];
@@ -44,7 +29,7 @@ int main() {
   int commandsCount = 0;
   int currAction = 0;
   scanf("%d", &commandsCount);
-
+ // for every command read, every Hero produce action according to the type of the command
   for (int i = 0; i < commandsCount; ++i) {
     scanf("%d", &currAction);
     archmageAction(archmage, currAction);

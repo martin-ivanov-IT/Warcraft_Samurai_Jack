@@ -3,7 +3,8 @@
 
 #include "Defines.h"
 #include <stdbool.h>
-
+#include <stdio.h>
+#include <string.h>
 
 #define MAX_SPELL_NAME_SIZE 20
 #define MAX_HERO_NAME_SIZE 20

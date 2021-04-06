@@ -1,6 +1,4 @@
 #include"Archmage.h"
-#include "Defines.h"
-#include"Hero.h"
 
 // assign values to the Archmage struct elements (Hero struct and int manaRegenModifier)
 void initArchmage(Archmage* archmage, char* name, int maxMana, int baseManaRegenRate, int manaRegenModifier){

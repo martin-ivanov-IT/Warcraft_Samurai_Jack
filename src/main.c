@@ -4,7 +4,6 @@
 #include"DrawRanger.h"
 #include"DeathKnight.h"
 
-
 int main() {
   char name[MAX_HERO_NAME_SIZE + 1];
   int maxMana = 0;

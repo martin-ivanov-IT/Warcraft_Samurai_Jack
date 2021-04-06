@@ -1,5 +1,4 @@
 #include"DrawRanger.h"
-#include"Defines.h"
 
 // assign values to the DrawRanger struct elements (Hero struct)
 void initDrawRanger(DrawRanger* drawRanger, char* name, int maxMana, int baseManaRegenRate){

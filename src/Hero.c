@@ -1,9 +1,5 @@
 #include"Hero.h"
-#include "Defines.h"
-#include <stdio.h>
-#include <stdbool.h>
-#include <string.h>
-#include <stdlib.h>
+
 // assign values to the Hero struct elements which are read from the standard input
 void heroBaseInit(Hero *hero, const char *inputName, int inputMaxMana, int inputManaRegenRate){
     strncpy(hero->name, inputName,MAX_HERO_NAME_SIZE);

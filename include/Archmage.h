@@ -1,8 +1,6 @@
 #ifndef ARCHMAGE_H_
 #define ARCHMAGE_H_
-#include"Archmage.h"
-#include "Defines.h"
-#include "Hero.h"
+#include"Hero.h"
 typedef struct Archmage{
     Hero base;
     int manaRegenModifier;

@@ -1,5 +1,4 @@
 #include"DeathKnight.h"
-#include"Defines.h"
 
 // assign values to the DrawRanger struct elements (Hero struct)
 void initDeathKnight(DeathKnight* deathKnight, char* name, int maxMana, int baseManaRegenRate){

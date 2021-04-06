@@ -4,7 +4,6 @@
 
 typedef Hero DeathKnight;
 void initDeathKnight(DeathKnight* deathKnight, char* name, int maxMana, int baseManaRegenRate);
-void deathKnightAction(DeathKnight* deathKnight, enum ActionType actionType);
 
 
 #endif

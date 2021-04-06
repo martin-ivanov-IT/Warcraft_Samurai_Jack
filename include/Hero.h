@@ -15,12 +15,13 @@ typedef struct {
   int manaCost;
 } Spell;
 
-typedef struct {
+typedef struct Hero{
   Spell spells[MAX_SPELLS];
   char name[MAX_HERO_NAME_SIZE];
   int maxMana;
   int currMana;
   int manaRegenRate;
+  void (*action)(struct Hero*, enum ActionType actionType);
 } Hero;
 
 void heroBaseInit(Hero *hero, const char *inputName, int inputMaxMana,

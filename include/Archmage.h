@@ -6,8 +6,7 @@ typedef struct Archmage{
     int manaRegenModifier;
     
 }Archmage;
-
-void initArchmage(Archmage* archmage, char* name, int maxMana, int baseManaRegenRate, int manaRegenModifier);
-void archmageAction(Archmage* archmage, enum ActionType actionType);
+void Archamge_ctor(Archmage* const archmage, char* name, int maxMana, int baseManaRegenRate, int manaRegenModifier);
+void initArchmage(Archmage* const archmage, char* name, int maxMana, int baseManaRegenRate, int manaRegenModifier);
 
 #endif

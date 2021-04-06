@@ -1,4 +1,7 @@
 #include"Archmage.h"
+static void regenerate(Archmage* archmage);
+static void ultimateSpell(Archmage* archmage, Spell spell);
+static void archmageAction(Archmage* archmage, enum ActionType actionType);
 
 // assign values to the Archmage struct elements (Hero struct and int manaRegenModifier)
 void initArchmage(Archmage* archmage, char* name, int maxMana, int baseManaRegenRate, int manaRegenModifier){
@@ -8,7 +11,7 @@ void initArchmage(Archmage* archmage, char* name, int maxMana, int baseManaRegen
     // assign values to the Hero struct element sells which are defines
     heroSpellsInit(&archmage->base, ARCHMAGE_BASIC_SPELL_NAME, ARCHMAGE_BASIC_SPELL_MANA_COST,
                 ARCHMAGE_ULTIMATE_SPELL_NAME, ARCHMAGE_ULTIMATE_SPELL_MANA_COST);
-                
+    archmage->base.action = (void (*)(struct Hero*, enum ActionType actionType))archmageAction;
 }
 // multiply Mana regenerate rate, with modifier value, then increase current Mana with this rate, up to the initial Mana value(max mana)
 static void regenerate(Archmage* archmage){
@@ -25,7 +28,7 @@ static void ultimateSpell(Archmage* archmage, Spell spell){
     }
 }
 // take action, according to read action type
-void archmageAction(Archmage* archmage, enum ActionType actionType){
+static void archmageAction(Archmage* archmage, enum ActionType actionType){
     if(actionType == CAST_BASIC_SPELL){
         baseSpellAction(&archmage->base, archmage->base.spells[BASIC]);
     }

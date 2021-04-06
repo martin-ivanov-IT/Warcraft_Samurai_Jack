@@ -23,4 +23,5 @@ CMakeFiles/warcraft.dir/src/main.c.obj: H:\Warcraft\src\main.c \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/stdbool.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/i686-w64-mingw32/include/string.h \
  C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/i686-w64-mingw32/include/sec_api/string_s.h \
- H:/Warcraft/include/DrawRanger.h H:/Warcraft/include/DeathKnight.h
+ H:/Warcraft/include/DrawRanger.h H:/Warcraft/include/DeathKnight.h \
+ H:/Warcraft/include/Hero.h

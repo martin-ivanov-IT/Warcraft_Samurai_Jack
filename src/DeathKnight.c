@@ -10,6 +10,7 @@ void initDeathKnight(DeathKnight* deathKnight, char* name, int maxMana, int base
     // assign values to the Hero struct element spells which are defines
     heroSpellsInit(deathKnight, DEATH_KNIGHT_BASIC_SPELL_NAME, DEATH_KNIGHT_BASIC_SPELL_MANA_COST,
                 DEATH_KNIGHT_ULTIMATE_SPELL_NAME, DEATH_KNIGHT_ULTIMATE_SPELL_MANA_COST);
+    // assign function pointer
     deathKnight->action = &deathKnightAction;
 
 }

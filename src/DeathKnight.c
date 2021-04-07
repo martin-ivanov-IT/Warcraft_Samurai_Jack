@@ -1,11 +1,13 @@
 #include"DeathKnight.h"
+
 static void deathKnightAction(DeathKnight* deathKnight, enum ActionType actionType);
 static void ultimateSpell(DeathKnight* deathKnight, Spell spell);
+
 // assign values to the DrawRanger struct elements (Hero struct)
 void initDeathKnight(DeathKnight* deathKnight, char* name, int maxMana, int baseManaRegenRate){
     // assign values to the Hero struct elements  which are read from the standard input
     heroBaseInit(deathKnight, name, maxMana, baseManaRegenRate);
-    // assign values to the Hero struct element sells which are defines
+    // assign values to the Hero struct element spells which are defines
     heroSpellsInit(deathKnight, DEATH_KNIGHT_BASIC_SPELL_NAME, DEATH_KNIGHT_BASIC_SPELL_MANA_COST,
                 DEATH_KNIGHT_ULTIMATE_SPELL_NAME, DEATH_KNIGHT_ULTIMATE_SPELL_MANA_COST);
     deathKnight->action = &deathKnightAction;

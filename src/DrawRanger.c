@@ -9,6 +9,7 @@ void initDrawRanger(DrawRanger* drawRanger, char* name, int maxMana, int baseMan
     // assign values to the Hero struct element sells which are defines
     heroSpellsInit(drawRanger, DRAW_RANGER_BASIC_SPELL_NAME,DRAW_RANGER_BASIC_SPELL_MANA_COST,
                 DRAW_RANGER_ULTIMATE_SPELL_NAME, DRAW_RANGER_ULTIMATE_SPELL_MANA_COST);
+    // assign value to the function pointer
     drawRanger->action = &drawRangerAction;
 }
 // if basic spell is casted (true is returned by function baseSpellAction), bonus basic spell is casted for free

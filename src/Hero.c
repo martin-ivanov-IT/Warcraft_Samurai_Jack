@@ -23,7 +23,7 @@ void baseRegenerate(Hero* hero){
         hero->currMana = hero->maxMana;
     }
 }
-//terurns true if spell is casted, false if not
+//returns true if spell is casted, false if not
 bool baseSpellAction(Hero* hero, Spell spell){
     //if current mana is bigger than spell cost, cast the spell and print info who casted what for how much
     if(isSpellCastable(hero, spell)){

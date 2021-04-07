@@ -4,7 +4,7 @@
 void initDrawRanger(DrawRanger* drawRanger, char* name, int maxMana, int baseManaRegenRate){
     // assign values to the Hero struct elements  which are read from the standard input
     heroBaseInit(drawRanger, name, maxMana, baseManaRegenRate);
-    // assign values to the Hero struct element sells which are defines
+    // assign values to the Hero struct element spells which are defines
     heroSpellsInit(drawRanger, DRAW_RANGER_BASIC_SPELL_NAME,DRAW_RANGER_BASIC_SPELL_MANA_COST,
                 DRAW_RANGER_ULTIMATE_SPELL_NAME, DRAW_RANGER_ULTIMATE_SPELL_MANA_COST);
 

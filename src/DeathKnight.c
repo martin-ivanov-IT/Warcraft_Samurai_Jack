@@ -14,7 +14,7 @@ void initDeathKnight(DeathKnight* deathKnight, char* name, int maxMana, int base
     deathKnight->action = &deathKnightAction;
 
 }
-// if ultimate spell is casted (true is returned by function baseSpellAction), than bonus ultimate spell is casted for free
+// if ultimate spell is casted (true is returned by function baseSpellAction), then bonus ultimate spell is casted for free
 static void ultimateSpell(DeathKnight* deathKnight, Spell spell){
     if(baseSpellAction(deathKnight,spell)){
         printBonusSpellAction(deathKnight, deathKnight->spells[BASIC]);

@@ -37,7 +37,7 @@ bool baseSpellAction(Hero* hero, Spell spell){
         return false;
     }
 }
-// decrease curent mana with the spell cost
+// decrease current mana with the spell cost
 void takeMana(Hero* hero, Spell spell){
     hero->currMana -= spell.manaCost;      
 }

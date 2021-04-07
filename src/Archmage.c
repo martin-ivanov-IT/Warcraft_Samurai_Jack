@@ -8,9 +8,10 @@ void initArchmage(Archmage* archmage, char* name, int maxMana, int baseManaRegen
     // assign values to the Hero struct elements  which are read from the standard input
     heroBaseInit(&archmage->base, name, maxMana, baseManaRegenRate);
     archmage->manaRegenModifier = manaRegenModifier;
-    // assign values to the Hero struct element sells which are defines
+    // assign values to the Hero struct element spells which are defines
     heroSpellsInit(&archmage->base, ARCHMAGE_BASIC_SPELL_NAME, ARCHMAGE_BASIC_SPELL_MANA_COST,
                 ARCHMAGE_ULTIMATE_SPELL_NAME, ARCHMAGE_ULTIMATE_SPELL_MANA_COST);
+    // assign value to the function pointer
     archmage->base.action = (void (*)(struct Hero*, enum ActionType actionType))archmageAction;
 }
 // multiply Mana regenerate rate, with modifier value, then increase current Mana with this rate, up to the initial Mana value(max mana)
@@ -21,7 +22,7 @@ static void regenerate(Archmage* archmage){
         archmage->base.currMana = archmage->base.maxMana;
     }
 }
-// if ultimate spell is casted (true is returned by function baseSpellAction), than regenerate Mana
+// if ultimate spell is casted (true is returned by function baseSpellAction), then regenerate Mana
 static void ultimateSpell(Archmage* archmage, Spell spell){
     if(baseSpellAction(&archmage->base, spell)){
         regenerate(archmage);
